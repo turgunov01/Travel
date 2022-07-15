@@ -1,29 +1,39 @@
-.title-first {
+.title {
 
-    color: $color-light;
+    &-first {
 
-    &__main {
-        display: block;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 50px;
-        line-height: 60px;
         color: $color-light;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-        letter-spacing: 10px;
-        animation: leftToRight 1.7s ease;
-        animation-delay: 1s;
-        backface-visibility: hidden;
+
+        &__main {
+            display: block;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 50px;
+            line-height: 60px;
+            color: $color-light;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 10px;
+            animation: leftToRight 1.7s ease;
+            animation-delay: 1s;
+            backface-visibility: hidden;
+        }
+
+        &__secondary {
+            display: block;
+            font-weight: 100;
+            font-size: 40px;
+            line-height: 48px;
+            animation: rightToLeft 1.7s ease;
+            animation-delay: 1s;
+            backface-visibility: hidden;
+        }
     }
 
-    &__secondary {
-        display: block;
-        font-weight: 100;
-        font-size: 40px;
-        line-height: 48px;
-        animation: rightToLeft 1.7s ease;
-        animation-delay: 1s;
-        backface-visibility: hidden;
+    &-secondary {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 43px;
+        letter-spacing: 10px;
     }
 }

@@ -1,17 +1,17 @@
-// .row {
-//     max-width: $grid-width;
-//     margin: 0 auto;
-//     display: none;
-//     background: red;
-//     &:not(:last-child) {
-//         margin-bottom: $margin-variable-big;
-//     }    
-// }
+.row {
+    max-width: $grid-width;
+    margin: 0 auto;
+    display: none;
+    background: red;
+    &:not(:last-child) {
+        margin-bottom: $margin-variable-big;
+    }    
+}
 
-// .col-1-of-2 {
-//     &:not(:last-child) {
-//         margin-right: $gutter-horizontal;
-//         width: 100%;
-//     }
-//     background: black;
-// }
+.col-1-of-2 {
+    &:not(:last-child) {
+        margin-right: $gutter-horizontal;
+        width: 100%;
+    }
+    background: black;
+}
