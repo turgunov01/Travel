@@ -1,17 +1,16 @@
 .row {
     max-width: $grid-width;
-    margin: 0 auto;
-    display: none;
-    background: red;
+    display: flex;
     &:not(:last-child) {
         margin-bottom: $margin-variable-big;
     }    
 }
 
 .col-1-of-2 {
+    max-width: $section2-max-width;
+    width: $max-percent;
     &:not(:last-child) {
-        margin-right: $gutter-horizontal;
-        width: calc(100% - $gutter-horizontal / 2);
+        width: calc(100% - #{$gutter-horizontal} / 2);
     }
-    background: black;
+    text-align: $start;
 }

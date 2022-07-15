@@ -49,3 +49,13 @@
         }
     }
 }
+
+.row {
+    &__about {
+        &-title {
+            @include about__title;
+        }
+        &-text {
+        }
+    }
+}

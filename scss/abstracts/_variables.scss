@@ -1,16 +1,99 @@
-$color-gray: #777777;
-$color-brown-light: #BA8554;
-$color-brown-dark: #A14F03;
-$color-light: #FAFAFA;
-$color-white: $color-light;
-$color-black: #000000;
-$color-brown-gradient: rgba(186, 133, 84, 0.7);
-$color-black-gradient: rgb(0, 0, 0);
+// Combination of regular colors
+$color-gray: #777777; // _Gray_
+$color-brown-light: #BA8554; // _Light_brown_
+$color-brown-dark: #A14F03; // _Dark_brown_
+$color-light: #FAFAFA; // White
+$color-white: $color-light; // Experiment on variabling the style - White ($color-white)
+$color-black: #000000; // Black || Dark 
+$color-brown-gradient: rgba(186, 133, 84, 0.7); // Regular gradient colors -- buttons, hovers, background-clip*
+$color-black-gradient: rgb(0, 0, 0); // Regular gradient colors -- buttons, hovers, background-clip*
 
+
+// Shadows - elements, cards
 $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 $shadow-h2: 10px 15px 15px rgba($color-black, .25);
 
 $margin-variable-big: 8rem;
-$grid-width: 114rem;
 $gutter-horizontal: 6rem;
+
+
+// Sizes
+$section2-max-width: 480px;
+$max-percent: 100%;
+$grid-width: 114rem;
+
+
+// Text position
+$center: center;
+$start: start;
+$end: end;
+
+
+// Flex-Box
+$flex-center: center;
+$flex-start: flex-start;
+$flex-end: flex-end;
+
+
+// Space - AIR between elements FLEXBOX
+$between: space-between;
+$evenly: space-evenly;
+$around: space-around;
+
+// Flex-direction
+$dir-column: column;
+$dir-row: row;
+$dir-col-reverse: column-reverse;
+$dir-row-reverse: row-reverse;
+
+// Space - AIR between elements (margin || padding)
+$m1: 10px; $p1: 10px;
+$m2: 20px; $p2: 20px;
+$m3: 30px; $p3: 30px;
+$m4: 40px; $p4: 40px;
+$m5: 50px; $p5: 50px;
+$m6: 60px; $p6: 60px;
+$m7: 70px; $p7: 70px;
+$m8: 80px; $p8: 80px;
+$m9: 90px; $p9: 90px;
+$m10: 100px; $p10: 100px;
+
+// Space - AIR between elements (margin-top || padding-top)
+
+$mt1: 10px; $pt1: 10px;
+$mt2: 20px; $pt2: 20px;
+$mt3: 30px; $pt3: 30px;
+$mt4: 40px; $pt4: 40px;
+$mt5: 50px; $pt5: 50px;
+$mt6: 60px; $pt6: 60px;
+$mt7: 70px; $pt7: 70px;
+$mt8: 80px; $pt8: 80px;
+$mt9: 90px; $pt9: 90px;
+$mt10: 100px; $pt10: 100px;
+
+// Space - AIR between elements (margin-left || padding-left)
+$ml1: 10px; $pl1: 10px;
+$ml2: 20px; $pl2: 20px;
+$ml3: 30px; $pl3: 30px;
+$ml4: 40px; $pl4: 40px;
+$ml5: 50px; $pl5: 50px;
+$ml6: 60px; $pl6: 60px;
+$ml7: 70px; $pl7: 70px;
+$ml8: 80px; $pl8: 80px;
+$ml9: 90px; $pl9: 90px;
+$ml10: 100px; $pl10: 100px;
+
+// Space - AIR between elements (margin-right || padding-right)
+
+$mr1: 10px; $pr1: 10px;
+$mr2: 20px; $pr2: 20px;
+$mr3: 30px; $pr3: 30px;
+$mr4: 40px; $pr4: 40px;
+$mr5: 50px; $pr5: 50px;
+$mr6: 60px; $pr6: 60px;
+$mr7: 70px; $pr7: 70px;
+$mr8: 80px; $pr8: 80px;
+$mr9: 90px; $pr9: 90px;
+$mr10: 100px; $pr10: 100px;
+
 
