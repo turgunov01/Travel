@@ -31,9 +31,21 @@
     }
 
     &-secondary {
+        display: inline-block;
         font-weight: 800;
         font-size: 36px;
         line-height: 43px;
         letter-spacing: 10px;
+        text-transform: uppercase;
+        background: linear-gradient(90.05deg, $color-brown-gradient 0.03%, rgba($color-brown-gradient, 0.7) 99.94%);
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: all .4s;
+
+        &:hover {
+            transform: skewY(2deg) skewX(15deg);
+            text-shadow: $shadow-h2;
+
+        }
     }
 }
