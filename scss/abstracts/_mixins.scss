@@ -1,0 +1,8 @@
+@mixin btn_repeat($color) {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: $color;
+    border-radius: 50px;
+    transition: all .3s;
+}
