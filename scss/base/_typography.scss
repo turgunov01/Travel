@@ -1,3 +1,6 @@
+@import '../abstracts/mixins.scss';
+@import '../base/utilities.scss';
+
 .title {
 
     &-first {
@@ -41,6 +44,8 @@
         -webkit-background-clip: text;
         color: transparent;
         transition: all .4s;
+        margin-bottom: $mb8;
+
 
         &:hover {
             transform: skewY(2deg) skewX(15deg);
@@ -55,7 +60,10 @@
         &-title {
             @include about__title;
         }
-        &-text {
+        &-txt {
+            @include about__text;
         }
+
+        
     }
 }
