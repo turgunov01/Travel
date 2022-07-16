@@ -50,7 +50,7 @@ body
             letter-spacing: .2rem
         
 
-.title-secondary
+.title-secondary 
     text-align: center
     display: inline-block
     font-size: $font-size-paragraph-h2
@@ -66,6 +66,7 @@ body
         font-size: 3rem
     @include respond(tab-port)
         letter-spacing: .6rem
+    
 
     &:hover
         transform: skewY(2deg) skewX(15deg) scale(1.1)
@@ -74,10 +75,7 @@ body
         color: $color-white
 
 .title-third
-    font-size: $font-size-paragraph-h3
-    letter-spacing: .2rem
-    text-transform: uppercase
-    font-weight: 700
+    @include title-third
     @include respond(tab-land)
         font-size: 1.8rem
 
