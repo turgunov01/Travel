@@ -1,0 +1,27 @@
+.card-tour
+    height: 500px
+    perspective: 1500px
+    -moz-perspective: 1500px
+    position: relative
+    @media only screen and (max-width: 900px), (hover:none)
+        height: auto
+    
+    &__side
+        height: 500px
+        transition: .7s all ease-out
+        color: white
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        backface-visibility: hidden
+        box-shadow: $box-shadow
+        border-radius: 5px
+        overflow: hidden
+        
+        &-front, &-back 
+            background: red
+
+        
+
+
