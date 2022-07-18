@@ -1,0 +1,26 @@
+.feedback__card
+    background: rgba(255, 255, 255, 80%)
+    width: 75%
+    margin: 0 auto
+    box-shadow: $box-shadow
+    padding: 60px
+    transform: skewX(330deg)
+    display: flex
+    align-items: center
+
+    & > *
+        transform: skewX(-330deg)
+    &-img
+        border-radius: 50%
+        width: 200px
+        height: 200px
+        box-shadow: $box-shadow
+        overflow: hidden
+        shape-outside: circle(50%)
+        -webkit-shape-outside: circle(50%)
+        & img
+            height: 100%
+            width: 100%
+
+    &-opinion
+        width: 100%

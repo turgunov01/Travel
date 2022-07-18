@@ -1,3 +1,9 @@
+.inner 
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 100px
+    
 .card-tour
     height: 500px
     perspective: 1500px
@@ -5,6 +11,7 @@
     position: relative
     max-width: 350px
     width: 100%
+    
     @media only screen and (max-width: 900px), (hover:none)
         height: auto
 
@@ -31,6 +38,7 @@
         position: absolute
         top: 0
         left: 0
+        max-width: 400px
         width: 100%
         backface-visibility: hidden
         background: red
@@ -48,9 +56,18 @@
             background: linear-gradient(156.85deg, #C3956A 3.65%, #A24F03 100%)
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 15px 40px rgba(0, 0, 0, 0.15)
             border-radius: 3px
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            row-gap: 90px
 
     &:hover &-side-back
         transform: rotateY(0)
 
     &:hover &-side-front
         transform: rotateY(180deg)
+
+
+.btn-order 
+    transform: scale(0.9)

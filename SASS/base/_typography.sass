@@ -4,10 +4,7 @@ body
     color: $color-gray
     font-size: $font-size-paragraph
     letter-spacing: .2rem
-    
-    
-    
-    
+
 .title-first
     color: $color-white
     &__main
@@ -32,7 +29,7 @@ body
 
     &__secondary
         display: block
-        font-weight: 100    
+        font-weight: 100
         font-size: 4rem
         line-height: 4.8rem
         letter-spacing: .5rem
@@ -48,9 +45,8 @@ body
         @include respond(tab-port)
             font-size: 3.2rem
             letter-spacing: .2rem
-        
 
-.title-secondary 
+.title-secondary
     text-align: center
     display: inline-block
     font-size: $font-size-paragraph-h2
@@ -66,7 +62,6 @@ body
         font-size: 3rem
     @include respond(tab-port)
         letter-spacing: .6rem
-    
 
     &:hover
         transform: skewY(2deg) skewX(15deg) scale(1.1)
@@ -87,3 +82,29 @@ body
     @include respond(tab-land)
         font-size: 1.5rem
 
+.title-forth
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    letter-spacing: 2px
+    text-align: center
+    text-transform: uppercase
+
+.title-price
+    text-align: center
+    display: inline-block
+    font-size: $font-size-paragraph-h2
+    letter-spacing: 1rem
+    text-transform: uppercase
+    font-weight: 700
+    @include respond(tab-land)
+        font-size: 3rem
+    @include respond(tab-port)
+        letter-spacing: .6rem
+
+.title-comment
+    font-weight: 800
+    font-size: 36px
+    line-height: 43px
+    letter-spacing: 10px
+    color: $color-white
