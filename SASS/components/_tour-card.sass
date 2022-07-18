@@ -3,25 +3,54 @@
     perspective: 1500px
     -moz-perspective: 1500px
     position: relative
+    max-width: 350px
+    width: 100%
     @media only screen and (max-width: 900px), (hover:none)
         height: auto
-    
-    &__side
+
+    &-image
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 88%)
+        margin-top: -170px
+        height: 450px
+
+    &-desc
+        width: max-content
+        border-bottom: 1px solid $color-gray
+        font-weight: 700
+        font-size: 16px
+        line-height: 19px
+        letter-spacing: 2px
+        margin: 0 auto
+        &:not(:last-of-type)
+            margin-bottom: 20px
+
+    &-side
         height: 500px
-        transition: .7s all ease-out
+        transition: .3s all ease-out
         color: white
         position: absolute
         top: 0
         left: 0
         width: 100%
         backface-visibility: hidden
+        background: red
         box-shadow: $box-shadow
         border-radius: 5px
         overflow: hidden
-        
-        &-front, &-back 
-            background: red
 
-        
+        &-front
+            background: $color-white
+            color: $color-black
+            transform: rotateY(0)
 
+        &-back
+            transform: rotateY(-180deg)
+            background: linear-gradient(156.85deg, #C3956A 3.65%, #A24F03 100%)
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 15px 40px rgba(0, 0, 0, 0.15)
+            border-radius: 3px
 
+    &:hover &-side-back
+        transform: rotateY(0)
+
+    &:hover &-side-front
+        transform: rotateY(180deg)
