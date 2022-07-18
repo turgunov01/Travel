@@ -1,39 +1,15 @@
 .adventure-card
-    padding: 25px
-    background: rgba($color-white, .8s)
-    border-radius: 5px
+    padding: 2.5rem
+    background-color: rgba($color-white, .8)
+    border-radius: .5rem
     box-shadow: $box-shadow
     text-align: center
-    transition: all .2s
-    width: 280px
-    height: 350px
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    & .paragraph
-        font-size: 16px
-        line-height: 19px
-        text-align: center
-        letter-spacing: 2px
+    transition: .2s all
     &:hover
-        box-shadow: $box-shadow
-        transform: translateY(-25px) scale(1.1)
-        background: $color-brown-light
-
-        & .icon-Vector-1, .icon-Vector-2, .icon-Vector-3, .icon-Vector
-            -webkit-background-clip: unset
-            color: $color-white
-            background: unset
-
-        & .adventure-title
-            color: $color-white
-
-        & .paragraph
-            color: $color-white
-    &-icon
-        display: inline-block
-        font-size: 60px
+        transform: translateY(-1.5rem) scale(1.03)
+    &__icon
+        font-size: 6rem
         background: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-brown-dark, 0.7) 99.94%)
         -webkit-background-clip: text
         color: transparent
+        display: inline-block
