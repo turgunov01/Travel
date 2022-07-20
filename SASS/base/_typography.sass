@@ -4,10 +4,7 @@ body
     color: $color-gray
     font-size: $font-size-paragraph
     letter-spacing: .2rem
-    
-    
-    
-    
+
 .title-first
     color: $color-white
     &__main
@@ -32,7 +29,7 @@ body
 
     &__secondary
         display: block
-        font-weight: 100    
+        font-weight: 100
         font-size: 4rem
         line-height: 4.8rem
         letter-spacing: .5rem
@@ -48,7 +45,6 @@ body
         @include respond(tab-port)
             font-size: 3.2rem
             letter-spacing: .2rem
-        
 
 .title-secondary
     text-align: center
@@ -60,6 +56,7 @@ body
     background: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-brown-dark, 0.7) 99.94%)
     -webkit-background-clip: text
     color: transparent
+    text-shadow: $shadow-h2
     transition: all .4s
     backface-visibility: hidden
     @include respond(tab-land)
@@ -69,7 +66,6 @@ body
 
     &:hover
         transform: skewY(2deg) skewX(15deg) scale(1.1)
-        text-shadow: $shadow-h2
     &_white
         color: $color-white
 
@@ -88,4 +84,3 @@ body
     font-weight: 400
     @include respond(tab-land)
         font-size: 1.5rem
-
